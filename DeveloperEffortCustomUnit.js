@@ -28,7 +28,11 @@ tau
         };
 
         addCSSRule('.tau-card-v2__section .tau-board-unit_type_developer_effort',
-            'position: absolute; left:0; right: 0; bottom: 0; top: 0; display: flex; align-items: center; justify-content: center; background: transparent;'
+            'position: absolute; left:0; right: 0; bottom: 0; top: 0; ' +
+            'display: -webkit-flex; display: -ms-flex; display: flex;' +
+            '-webkit-align-items: center; -ms-flex-align: center; align-items: center; ' +
+            '-webkit-justify-content: center; -ms-flex-pack: center; justify-content: center;' +
+            'background: transparent;'
         );
 
         addCSSRule('.tau-card-v2__section .tau-board-unit_type_developer_effort .tau-board-unit__value',

@@ -42,7 +42,8 @@ tau
             name: 'Developer Effort',
             classId: 'tau-board-unit_type_developer_effort',
             types: [
-                types.STORY, types.BUG
+                types.EPIC, types.FEATURE, types.STORY, types.TASK, types.BUG, types.TEST_PLAN, types.TEST_PLAN_RUN,
+                types.REQUEST
             ],
             template: [
                 '<div class="tau-board-unit__value"><%= String(Math.round(this.data.developerEffort[0] || 0)) %></div>'
